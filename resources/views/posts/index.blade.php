@@ -1,14 +1,15 @@
 @extends('layouts')
 
 @section('content')
-    <div class="container mt-4">  
+    <div class="container mt-4">
+        @foreach ($posts as $post)
         <div class="card mb-4">
             <div class="card-header mb-2">
-                Title
+                {{ $post->title }}
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    body
+                    {{ $post->body }}
                 </p>
                 
             </div>
@@ -19,6 +20,7 @@
             </div>
 
         </div>
+        @endforeach
     </div>
     
 @endsection('content')
