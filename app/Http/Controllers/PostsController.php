@@ -11,6 +11,7 @@ class PostsController extends Controller
     {
         $posts = Post::orderBy('created_at', 'desc')->get();
         return view('posts.index', ['posts' => $posts]);
+
     }
     
     public function create()
@@ -27,5 +28,6 @@ class PostsController extends Controller
         post::create($params);
         
         return redirect()->route('top');
+
     }
 }
