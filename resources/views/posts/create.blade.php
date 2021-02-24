@@ -20,9 +20,9 @@
                             value="{{old('title')}}"
                             type="text"
                              >
-                             <div class= "text-danger">
-                                 {{$errors->first('title')}}
-                             </div>
+                        <div class= "text-danger">
+                             {{$errors->first('title')}}
+                        </div>
                     </div>
                     <div>
                         <label for="body">

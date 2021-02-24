@@ -4,7 +4,7 @@
 
     <div class="container mt-4">
         
-        <div class="mb-4">
+        <div class="card mb-4">
             <div class="card-header mb-2">
                 {{ $post->title }}
             </div>
@@ -16,7 +16,7 @@
             </div>
             <div class="card-footer">
                 <span class="mr-2">
-                    投稿日時
+                    投稿日時 {{ $post->created_at}}
                 </span>
             </div>
         </div>
